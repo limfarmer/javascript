@@ -44,3 +44,26 @@ console.log(0.1+ 0.2);
  if(isAdult)
  console.log('성인!');
 else console.log('애기');
+
+// undefiend :
+let empty;// js는 값이 될 떄 형이 결정나고 값이 대입되지 않으면 undifined
+console.log(empty);
+
+// 객체 : 자바스크립트는 기본 자료형을 제외하고 모든 자료형이 객체이다
+// 배열
+let score = [80,90,100,70];
+console.log(score[2]);
+let array2 = ["아이브", "안유진","장원영",20,true,[100,99,88]];
+console.log(array2[1][1]);
+
+// 객체 리터럴(자바의 Map과 조금 유사)
+let 스코어 = {
+  kor : 80,
+  eng : 90,
+  mat : 56,
+  scn : 99,
+};
+console.log(스코어.mat);
+
+// typeof : 데이터 형을 확인하기 위해 사용
+// toSring() : 문자열로 변환하는 메소드
