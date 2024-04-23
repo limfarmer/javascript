@@ -11,10 +11,10 @@ function pay(n) {
   console.log("지불 할 금액은 : " + n + "입니다.");
 }
 
-// buy_tobe("\'밤고구마 맛없음\'", 1000, 5, pay);
+buy_tobe("\'밤고구마 맛없음\'", 1000, 5, pay);
 
-let button = document.querySelector('#myBtt');
-button.addEventListener('click',() => {
-  console.log("전송 버튼이 활성화 되었습니다.");
-  console.log('내가 쓴 글 전송');
-});
+// let button = document.querySelector('#myBtt');
+// button.addEventListener('click',() => {
+//   console.log("전송 버튼이 활성화 되었습니다.");
+//   console.log('내가 쓴 글 전송');
+// });
