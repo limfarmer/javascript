@@ -1,11 +1,11 @@
 // 함수 선언문 : function 키워드로 선언하며 함수이름을 가짐,
 // ㄴ> 호이스팅에 영향을 받음
-// console.log(sum1);
+let sum1 = sum(21,24);
 
-// function sum(p1,p2){
-//   return sum = p1 + p2;
-// }
-// let sum1 = sum(21,24);
+function sum(p1,p2){
+  return sum = p1 + p2;
+}
+console.log(sum1);
 
 
 // 함수 표현식 : 변수에 함수를 할당해서 사용하는 방식, 호이스팅에 영향을 받지 않음
@@ -15,12 +15,13 @@
 // 익명의 함수를 쓰는 이유는 함수 선언문과 구별하기 위해서이고 표현식에서 
 // 이름을 쓰던 안쓰던 변수명으로 호출해야되기 때문에 안쓰는게 더 좋음
 
-const gugu = function(x){
+const gugu = function (x){
   for(let i = 1; i < 10; i++){
     console.log(`${x} x ${i} = ${x * i}`);
   }
 };
-gugu(3);
+// console.log(gugu);
+// gugu(3);
 
 // 화살표 함수
 const gugu2 = x => {
@@ -28,5 +29,10 @@ const gugu2 = x => {
     console.log(`${x} x ${i} = ${x * i}`);
   }
 };
-gugu2(5);
+// gugu2(5);
 
+// 기본값 할당 :
+function sum10(a = 10, b = 20){
+  console.log(a +b);
+}
+sum10(100);
