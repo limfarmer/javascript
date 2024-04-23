@@ -19,11 +19,24 @@
 
 // 블록 스코프 : 자바스크립트는 원래 함수 스코프를 따르는 언어 였지만,
 // ES6에서 블록 스코프를 지원하는 let, const가 추가됨
+// let a = 10;
+// {
+//   var b =20;
+//   console.log(`블록 내부 ${a}`);
+//   console.log(`블록 내부 ${b}`);
+// }
+// console.log(`블록 내부 ${a}`);
+// console.log(`블록 내부 ${b}`);
+
+// 참조 우선 순위 : 블록 안에 변수가 우선 순위
 let a = 10;
-{
-  let b =20;
-  console.log(`블록 내부 ${a}`);
-  console.log(`블록 내부 ${b}`);
+const b = 20;
+
+function sum20(){
+  let a =50;
+  const b = 70;
+  console.log(`함수 내부 ${a}`);
+  console.log(`함수 내부 ${b}`);
 }
-console.log(`블록 내부 ${a}`);
-console.log(`블록 내부 ${b}`);
+console.log(`함수 내부 ${a}`);
+console.log(`함수 내부 ${b}`);
