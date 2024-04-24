@@ -6,17 +6,17 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="box-1">
+  <div class="box box-1">
     <p class="text">text-1 </p>
     <p class="text">text-2</p>
   </div>
-  <div class="box-2">
+  <div class="box box-2">
     <p class="text">text-3</p>
     <p class="text">text-4</p>
   </div>
   <script>
-    const el =document.querySelector(".box-1 .text");
-    el.style = "color : red;"
+    const el =document.querySelectorAll(".box");
+    el[1].style = "color : red;"
   </script>
 </body>
 </html>
