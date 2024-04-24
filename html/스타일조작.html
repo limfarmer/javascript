@@ -5,12 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    #text{
-      
-    }
+   .active {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+   }
+   .red-color{
+    color: rebeccapurple;
+   }
   </style>
 </head>
 <body>
-  
+  <p id="text">text</p>
+  <script>
+    const elId = document.querySelector('#text');
+    // elId.style.backgroundColor = "orange";
+    // elId.style.fontSize = "40px";
+    elId.classList.add("active",'red-color');
+  </script>
 </body>
 </html>
