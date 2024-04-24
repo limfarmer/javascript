@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="http://google.co.kr">google</a>
+  <script>
+    const el= document.querySelector('a');
+    const href = el.getAttribute("href");
+    console.log(href) 
+    el.setAttribute("href","https://kakao.com");
+    el.innerText="kakao";
+  </script>
+  
+</body>
+</html>
