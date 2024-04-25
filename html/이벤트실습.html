@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 40%;
+      margin-top: 10%;
+      height: auto;
+    }
+    .cheezeAlbumImg{
+      width: 300px;
+      height: 170px;
+      background-image: url("../css/cheeze.jpg");
+      background-repeat: no-repeat;
+      display: flex;
+    }
+    .cheezeLyricsBtt{
+      display: flex;
+      align-self: flex-end;
+      margin-bottom: 5px;
+      margin-left: 5px;
+    }
+    .cheezeLyricsBtt button{
+      opacity : 0.5;
+      border: none;
+      background-color: aliceblue;
+    }
+    .cheezeLyricsBtt span{
+      color: black;
+      font-weight: bold;
+    }
+    .cheezeLyrics{
+      width: 300px;
+      display:none
+      
+    }
+    .cheezeLyrics span{
+      line-height: 50px;
+    }
+    .cheezeLyrics button{
+      border: 0.8px solid rgb(99, 98, 98) ;
+      background-color: rgb(248, 250, 253);
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cheezeAlbumImg">
+      <div class="cheezeLyricsBtt">
+        <button onclick="openLyricsBlock()">
+          <span>가사 보기</span>
+        </button>
+      </div>
+    </div>
+    <div class="cheezeLyrics">
+      <p style="font-weight: bold;">너 없이 첫날</p> 
+      <span>눈을 뜨고 나니<br>
+        아, 잠들었구나<br>
+        이대로 영원히<br>
+        잠들어 버릴까<br>
+        이상하리만큼<b<br>
+        그저 멍하니 있r>
+        집이 참 조용해었어<br>
+        사실 난<br>
+        실감 나진 않아 니가 없는 게<br>
+        어딘가 답답하기만 해<br>
+        어느새 하늘은 까맣게 물들어 가는데<br>
+        새벽이 지나도 아마 넌 안 올 것 같은데<br>
+        내일은 어떻게 해야 해 물어보고 싶어<br>
+        너 없이 어떻게 해야 돼<br>
+        가르쳐줄래<br>
+        아직 나<br>
+        울고 싶진 않아 니가 떠난 게<br>
+        어딘가 답답하기만 해<br>
+        어느새 하늘은 까맣게 물들어 가는데<br>
+        새벽이 지나도 아마 넌 안 올 것 같은데<br>
+        내일은 어떻게 해야 해 물어보고 싶어<br>
+        너 없이 어떻게 해야 돼<br>
+        가르쳐줄래<br>
+        남아버린 너의 습관들<br>
+        아, 다시 아득해져<br>
+        이대로 끝은 아니겠지 믿지 않으면<br>
+        다시 널 볼 수 있을까<br>
+        어느새 하루는 까맣게 물들어 가는데<br>
+        새벽이 지나도 아마 넌 안 올 것 같은데<br>
+        내일은 어떻게 해야 해 물어보고 싶어<br>
+        너 없이 어떻게 해야 돼<br>
+        가르쳐줄래<br>
+        </span>
+      <p><button onclick="closeLyricsBlock()">가사 닫기</button></p>
+    </div>
+  </div>
+  <script src="/js/이벤트실습.js"></script>
+</body>
+</html>
