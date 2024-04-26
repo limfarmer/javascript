@@ -41,3 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+// 입력창에 입력했을때 값을 체크하고 4개다 맞으면 버튼 활성화
+// 값체크 버튼활성화
