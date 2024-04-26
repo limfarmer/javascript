@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+}
+.cardContainer{
+
+  background-color: aqua;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+.card{
+  margin-top : 15%;
+  width: 20%;
+  height: 50%;
+  background-color: rgb(156, 23, 78);
+}
